@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes loading-bar {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-loading-bar {
+  animation: loading-bar 1.5s ease-in-out infinite;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #030014;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
